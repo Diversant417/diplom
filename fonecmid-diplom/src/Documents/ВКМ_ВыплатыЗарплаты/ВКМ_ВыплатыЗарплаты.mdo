@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b5eaa83-faa0-47f2-a763-3531cfaeb7cb">
+  <producedTypes>
+    <objectType typeId="19d4c31a-cd81-4f19-bfb0-3d8b72684b19" valueTypeId="1b47a5e0-2d3e-4a1a-8b70-098217e90c63"/>
+    <refType typeId="53ebd98b-6fbd-4f42-a8dc-7e3de82afa30" valueTypeId="9daee3c2-19f0-4667-a65b-3e148eb64373"/>
+    <selectionType typeId="c51b3581-3a96-4f9f-81e6-579fb5c21462" valueTypeId="7b7871dd-a9da-42b2-83d7-110c98a9f851"/>
+    <listType typeId="86f5b5b7-435b-473e-bf26-8c78939abc51" valueTypeId="51e9b5de-f8e5-43d6-a0c1-fc1fa253a920"/>
+    <managerType typeId="053226a6-9d61-4f51-9730-214079677595" valueTypeId="770442b6-294b-4034-a7d5-9b4e99f351f5"/>
+  </producedTypes>
+  <name>ВКМ_ВыплатыЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выплаты зарплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_ВыплатыЗарплаты.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Выплата зарплаты</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_ВыплатыЗарплаты.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="ee853e30-9fbf-4280-bc4b-4150aa696674">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="81021609-31f0-40cb-8d94-b1ad276e2eb8">
+    <producedTypes>
+      <objectType typeId="575d789f-66a7-4274-ba33-6ed157fc5e0b" valueTypeId="363c03a3-e9e0-4fc7-926d-2610670f2a48"/>
+      <rowType typeId="abde0917-dbf8-492f-90fc-5298d06a4073" valueTypeId="b1f2cf83-03da-4811-a0a7-de95c50b299e"/>
+    </producedTypes>
+    <name>Выплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выплаты</value>
+    </synonym>
+    <attributes uuid="3e65b2d8-0dfd-4e97-8f8c-e1bdafe35f17">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9d16bce8-52cd-4b48-8238-9ffa1c79de57">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_Подразделения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4ec69569-7151-42c3-8a2d-5ee930a2f5bd">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
