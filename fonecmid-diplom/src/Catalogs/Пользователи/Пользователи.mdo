@@ -225,7 +225,7 @@
       <value>Подразделение</value>
     </synonym>
     <type>
-      <types>DefinedType.Подразделение</types>
+      <types>CatalogRef.ВКМ_Подразделения</types>
     </type>
     <toolTip>
       <key>ru</key>
