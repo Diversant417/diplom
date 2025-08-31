@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="890231e6-ef58-437b-b3a0-9664f9a8bab0">
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0b7fd7f-811b-49b1-b2c7-d0cf76d5df4c">
   <name>ВКМ_Документы</name>
   <synonym>
     <key>ru</key>
